@@ -39,11 +39,32 @@ section#telefone {
     background: url('../imagens/frame-iphone.png') no-repeat;
 
 }
-
-iframe#tela {
+ /* Abaixo serve para posicionar a imagem dentro da tela do celular */
+    iframe#tela {
     position: relative;
     top: 80px;
     left: 22px;
-    width: 269px;
+    width: 267px;
     height: 471px;
 }
+
+section#rede-sociais {
+    text-align: right;
+}
+
+section#rede-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 3px black;
+    box-sizing: border-box; /*Para não mexer os botões por causa da borda*/
+}
+
+section#rede-sociais img:hover {
+    border-radius: 50px;
+    border: 2px solid rgb(230, 229, 229);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px black;
+    transition: transform 1s; border 1s;
+}
+
